@@ -1,0 +1,12 @@
+.a1:hover{
+    color: black;
+}
+
+.s1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+img{
+    border-radius: 5%;
+}

@@ -1,0 +1,47 @@
+body {
+    background-color: bisque;
+    padding: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2 {
+    color: brown;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#imagem1{
+    border-radius: 10%;
+}
+
+a{
+    color: darkblue;
+}
+
+footer{
+    text-align: center;
+}
+
+.head{
+    text-align: center;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.b1{
+    background-color: darkred;
+    border-radius: 15%;
+    font-size: 1em;
+    opacity: 0.6;
+}
+
+.b1:hover{
+    opacity: 1;
+}
+
+.b1 a{
+    color: white;
+}

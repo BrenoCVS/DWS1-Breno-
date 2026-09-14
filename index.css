@@ -1,0 +1,13 @@
+mark{
+    background-color: blue;
+    color: white;
+}
+
+.s1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.a2:hover{
+    color: black;
+}
