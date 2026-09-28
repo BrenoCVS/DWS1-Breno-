@@ -1,42 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sobre-o-css.css" />
+    <title>Sobre o HTML e CSS</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
+  <body>
+    <header id="top">
+      <div class="head">
+        <h1>Meu Site Pessoal</h1>
+      </div>
+      <div class="menu-container">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <nav class="navegacao">
+          <button class="b1">
+            <a class="a1" href="index.html">Sobre mim</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="cidade.html">Minha cidade</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="sonho.html">Um sonho</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="inspiracao.html">Alguém que me inspira</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="tematica.html">Página temática</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="infoproduto.html">Infoproduto</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="sobre-o-css.html">Sobre o HTML/CSS</a>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <br />
+    <hr />
+    <br />
+    <main>
+      <section>
+        <h2>Tags HTML Utilizadas no Projeto</h2>
+        <ul class="lista-conceitos">
+          <li>
+            <strong
+              >&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;,
+              &lt;aside&gt;, &lt;footer&gt;:</strong
+            >
+            Tags semânticas utilizadas para estruturar as diferentes secções de
+            cada página.
+          </li>
+          <li>
+            <strong>&lt;h1&gt;, &lt;h2&gt;:</strong> Títulos e subtítulos
+            organizados hierarquicamente.
+          </li>
+          <li>
+            <strong>&lt;p&gt;:</strong> Parágrafos para a apresentação de textos
+            e descrições.
+          </li>
+          <li>
+            <strong>&lt;ul&gt;, &lt;li&gt;:</strong> Listas não ordenadas
+            utilizadas nos menus, índices e explicações.
+          </li>
+          <li>
+            <strong>&lt;a&gt;, &lt;button&gt;:</strong> Hiperligações de
+            navegação interna/externa e botões interativos.
+          </li>
+          <li>
+            <strong>&lt;figure&gt;, &lt;img&gt;, &lt;figcaption&gt;:</strong>
+            Agrupamento de imagens com as respetivas legendas.
+          </li>
+          <li>
+            <strong>&lt;input&gt;, &lt;label&gt;:</strong> Utilizados para criar
+            o menu hambúrguer interativo (Menu Toggle via CSS).
+          </li>
+          <li>
+            <strong>&lt;strong&gt;, &lt;sup&gt;:</strong> Destaque de texto em
+            negrito e texto sobrescrito (ex: 1<sup>o</sup> campeonato).
+          </li>
+          <li>
+            <strong>&lt;div&gt;:</strong> Contentores genéricos para organização
+            de blocos e layouts.
+          </li>
+          <li>
+            <strong>&lt;hr&gt;, &lt;br&gt;:</strong> Linhas de separação visual
+            e quebras de linha.
+          </li>
+        </ul>
+      </section>
 
-<body>
-    <h1>Propriedades CSS utilizadas</h1>
+      <section>
+        <h2>Propriedades CSS Utilizadas no Projeto</h2>
+        <ul class="lista-conceitos">
+          <li>
+            <strong>display: flex:</strong> Ativa o modelo Flexbox para alinhar
+            e distribuir elementos na página.
+          </li>
+          <li>
+            <strong>flex-direction:</strong> Define a direção dos itens no
+            Flexbox (em coluna <code>column</code> para telemóveis e em linha
+            <code>row</code> para ecrãs maiores).
+          </li>
+          <li>
+            <strong>justify-content:</strong> Alinha os elementos no eixo
+            principal (ex: <code>center</code>, <code>flex-start</code>,
+            <code>space-between</code>).
+          </li>
+          <li>
+            <strong>align-items:</strong> Controla o alinhamento dos itens no
+            eixo secundário (ex: <code>center</code>, <code>flex-start</code>).
+          </li>
+          <li>
+            <strong>flex-wrap:</strong> Permite que os elementos quebrem para a
+            linha seguinte quando não couberem no ecrã.
+          </li>
+          <li>
+            <strong>gap:</strong> Define o espaçamento entre elementos dentro de
+            um contentor Flexbox.
+          </li>
+          <li>
+            <strong>width, max-width, height:</strong> Ajustam a largura e
+            altura de caixas e imagens, garantindo a responsividade.
+          </li>
+          <li>
+            <strong>margin, padding:</strong> Controlam as margens externas e o
+            espaçamento interno dos elementos.
+          </li>
+          <li>
+            <strong>border-radius:</strong> Arredonda as bordas de imagens e
+            caixas do site.
+          </li>
+          <li>
+            <strong>background-color, color:</strong> Definem as cores de fundo
+            e do texto.
+          </li>
+          <li>
+            <strong>:hover:</strong> Pseudoclasse utilizada para aplicar efeitos
+            visuais ao passar o cursor sobre botões e links.
+          </li>
+          <li>
+            <strong>@media (min-width: ...):</strong> Regras de responsividade
+            para adaptar o layout a computadores e tablets.
+          </li>
+        </ul>
+      </section>
 
-    <ul>
-        <li>
-            <h2> Display: flex:</h2>
-            <p>A propriedade display: flex é utilizada para organizar os elementos dentro de um container de forma
-                flexível. Por padrão, os elementos são posicionados lado a lado, facilitando a criação de menus e outras
-                estruturas.</p>
-        </li>
-        <li>
-            <h2> Justify-content: flex-start:</h2>
-            </p>A propriedade justify-content define como os elementos são distribuídos dentro de um container flexível.
-            O valor flex-start faz com que os elementos sejam posicionados no início do container, no lado esquerdo.</p>
-        </li>
+      <p>
+        <button class="b1">
+          <a class="a1" href="#top">↑ Voltar ao topo</a>
+        </button>
+      </p>
+    </main>
 
-        <li>
-            <h2>Gap: </h2>
-            <p> A propriedade gap define o espaço entre os elementos de um container.</p>
-        </li>
-    </ul>
-
-    <button class="b1"><a href="index.html">Sobre mim</a></button>
-
-</body>
-
-<footer>
-    <p>&copy; 2026 - Breno Vialle.</p>
-
-</footer>
-
+    <footer>
+      <p>&copy; 2026 - Breno Vialle.</p>
+    </footer>
+  </body>
 </html>

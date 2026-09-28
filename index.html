@@ -1,74 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
 
     <title>Sobre Mim</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header id="top">
-        <div class="head">
-            <h1>Meu Site Pessoal</h1>
-        </div>
-        <div class="navegacao">
-            <button class="b1"><a class="a1" href="cidade.html">Minha cidade</a></button>
-            <button class="b1"><a class="a1" href="sonho.html">Um sonho</a></button>
-            <button class="b1"><a class="a1" href="inspiracao.html">Alguém que me inspira</a></button>
-            <button class="b1"><a class="a1" href="tematica.html">Página temática</a></button>
-            <button class="b1"><a href="sobre-o-css.html">Sobre o HTML</a></button>
-
-        </div>
+      <div class="head">
+        <h1>Meu Site Pessoal</h1>
+      </div>
+      <div class="menu-container">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <nav class="navegacao">
+          <button class="b1">
+            <a class="a1" href="index.html">Sobre mim</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="cidade.html">Minha cidade</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="sonho.html">Um sonho</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="inspiracao.html">Alguém que me inspira</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="tematica.html">Página temática</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="infoproduto.html">Infoproduto</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="sobre-o-css.html">Sobre o HTML</a>
+          </button>
+        </nav>
+      </div>
     </header>
-    <br>
-    <hr>
-    <br>
+    <br />
+    <hr />
+    <br />
     <main>
-        <section>
-            <h2>Sobre mim</h2>
-            <span class="s1">
-                <figure>
-                    <img id="imagem1" src="imagens/eu.jpeg" alt="Foto de perfil" width="200">
-                    <figcaption>Minha foto de perfil padrão.</figcaption>
-                </figure>
-                <p>Olá meu nome é <strong>Breno Vialle</strong>. Aluno de <strong>Sistemas da informação</strong> no
-                    IFSP Campus de Votuporanga, gosto da parte de progamação do curso.</p>
-            </span>
-        </section>
+      <section>
+        <h2>Sobre mim</h2>
+        <div class="s1">
+          <figure>
+            <img
+              id="imagem1"
+              src="imagens/eu.jpeg"
+              alt="Foto de perfil"
+              width="200"
+            />
+            <figcaption>Minha foto de perfil padrão.</figcaption>
+          </figure>
+          <p>
+            Olá meu nome é <strong>Breno Vialle</strong>. Aluno de
+            <strong>Sistemas da informação</strong> no IFSP Campus de
+            Votuporanga, gosto da parte de programação do curso.
+          </p>
+        </div>
+      </section>
 
-        <section>
-            <h2>Meus Hobbies e Interesses</h2>
-            <p>No meu tempo livre, gosto de utar <mark>Jiu Jitsu</mark>, comecei a lutar Judo no ano passado e neste ano
-                mudei para o jiu, onde gostei mais da experiencia.</p>
-        </section>
+      <section>
+        <h2>Meus Hobbies e Interesses</h2>
+        <p>
+          No meu tempo livre, gosto de lutar <mark>Jiu Jitsu</mark>, comecei a
+          lutar Judô no ano passado e neste ano mudei para o jiu, onde gostei
+          mais da experiência.
+        </p>
+      </section>
 
-        <section>
-            <h2>Contato e Redes Sociais</h2>
-            <p>Entre em contato comigo através dos links abaixo:</p>
-            <ul>
-                <li><a class="a2" href="https://github.com/BrenoCVS" target="_blank">GitHub</a></li>
-                <li><a class="a2"
-                        href="https://linkedin.com/in/breno-vialle-b8966234b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                        target="_blank">LinkedIn</a></li>
-                <li><a class="a2"
-                        href="https://www.instagram.com/brenocvs?igsh=MTR6dzBidWkxNGdmcQ%3D%3D&igsi=MTR6dzBidWkxNGdmcQ%3D%3D"
-                        target="_blank">Instagram</a></li>
-                <li><a class="a2" href="mailto:breno.caua@aluno.ifsp.edu.br">Enviar E-mail</a></li>
-            </ul>
-        </section>
-        <p><button class="b1"><a class="a1" href="#top">↑ Voltar ao topo</a></p></button>
-
+      <section>
+        <h2>Contato e Redes Sociais</h2>
+        <p>Entre em contato comigo através dos links abaixo:</p>
+        <ul>
+          <li>
+            <a class="a2" href="https://github.com/BrenoCVS" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              class="a2"
+              href="https://linkedin.com/in/breno-vialle-b8966234b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              class="a2"
+              href="https://www.instagram.com/brenocvs?igsh=MTR6dzBidWkxNGdmcQ%3D%3D&igsi=MTR6dzBidWkxNGdmcQ%3D%3D"
+              target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a class="a2" href="mailto:breno.caua@aluno.ifsp.edu.br"
+              >Enviar E-mail</a
+            >
+          </li>
+        </ul>
+      </section>
+      <p>
+        <button class="b1">
+          <a class="a1" href="#top">↑ Voltar ao topo</a>
+        </button>
+      </p>
     </main>
 
     <footer>
-        <p>&copy; 2026 -Breno Vialle</p>
+      <p>&copy; 2026 - Breno Vialle</p>
     </footer>
-
-</body>
-
+  </body>
 </html>

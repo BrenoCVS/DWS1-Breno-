@@ -1,12 +1,59 @@
-.a1:hover{
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    border-radius: 5%;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.a1:hover {
     color: black;
 }
 
-.s1{
+.layout-tematica {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
 }
 
-img{
-    border-radius: 5%;
+.indice {
+    background-color: #f5e1d3;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.s1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .layout-tematica {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .indice {
+        width: 250px;
+        flex-shrink: 0;
+    }
+
+    .conteudo-tematica {
+        flex: 1;
+    }
+
+    .s1 {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .s1 figure {
+        flex-shrink: 0;
+    }
 }

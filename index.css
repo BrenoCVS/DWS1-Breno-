@@ -1,13 +1,22 @@
-mark{
+mark {
     background-color: blue;
     color: white;
 }
 
-.s1{
+.s1 {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.a2:hover{
+.a2:hover {
     color: black;
+}
+
+@media (min-width: 768px) {
+    .s1 {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 }

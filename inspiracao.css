@@ -1,5 +1,36 @@
-.s1{
-    display: flex;
-    justify-content: flex-start;
+figure {
+    margin: 0;
 }
 
+img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.s1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.a2:hover {
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .s1 {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .s1 figure {
+        flex-shrink: 0;
+    }
+
+    img {
+        max-width: 400px;
+    }
+}

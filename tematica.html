@@ -1,96 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="tematica.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tematica.css" />
     <title>Página Temática</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header id="top">
-        <div class="head">
-            <h1>Meu Site Pessoal</h1>
-        </div>
-        <div class="navegacao">
-            <button class="b1"><a href="index.html">Sobre mim</a></button>
-            <button class="b1"><a href="cidade.html">Minha cidade</a></button>
-            <button class="b1"><a href="sonho.html">Um sonho</a></button>
-            <button class="b1"><a href="inspiracao.html">Alguém que me inspira</a></button>
-            <button class="b1"><a href="sobre-o-css.html">Sobre o HTML</a></button>
-
-        </div>
+      <div class="head">
+        <h1>Meu Site Pessoal</h1>
+      </div>
+      <div class="menu-container">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <nav class="navegacao">
+          <button class="b1">
+            <a class="a1" href="index.html">Sobre mim</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="cidade.html">Minha cidade</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="sonho.html">Um sonho</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="inspiracao.html">Alguém que me inspira</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="tematica.html">Página temática</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="infoproduto.html">Infoproduto</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="sobre-o-css.html">Sobre o HTML</a>
+          </button>
+        </nav>
+      </div>
     </header>
-    <br>
-    <hr>
-    <br>
-    <aside>
+    <br />
+    <hr />
+    <br />
+    <div class="layout-tematica">
+      <aside class="indice">
         <p><strong>Navegue pelos blocos:</strong></p>
         <ul>
-            <li><a class="a1" href="#topico1">1. Helio Gracie e a História do Jiu Jitsu Brasileiro</a></li>
-            <li><a class="a1" href="#topico2">2. Luta do Roger Gracie a Jacaré</a></li>
-            <li><a class="a1" href="#topico3">3. Meu primeiro Campeonato</a></li>
+          <li>
+            <a class="a1" href="#topico1"
+              >1. Helio Gracie e a História do Jiu Jitsu Brasileiro</a
+            >
+          </li>
+          <li>
+            <a class="a1" href="#topico2">2. Luta do Roger Gracie x Jacaré</a>
+          </li>
+          <li><a class="a1" href="#topico3">3. Meu primeiro Campeonato</a></li>
         </ul>
-    </aside>
+      </aside>
 
-    <main>
+      <main class="conteudo-tematica">
         <section id="topico1">
-            <h2>1. Helio Gracie e a História do Jiu Jitsu Brasileiro</h2>
-            <span class="s1">
-                <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjOFShGpO_zmu8Az6tASpoe_1jR-oslp19-xzW8-ryyF2mBmm-nLek7o0zIlMfgzfzkzfyA4zzz3uvrlJ3PXcgdJHYDsIqOwBKYcVEoWYQFA&s=10"
-                        alt="Hélio Gracie" width="300">
-                    <figcaption>Hélio gracie o "pai" o BJJ.</figcaption>
-                </figure>
-                <p>Hélio Gracie (1913–2009), patriarca e 10º grau da faixa vermelha, revolucionou a arte suave ao
-                    adaptar as técnicas tradicionais japonesas para o biótipo frágil. Focando nos princípios da alavanca
-                    e na força do oponente, ele moldou a arte como um sistema definitivo de defesa pessoal e base do
-                    Brazilian Jiu-Jitsu (BJJ)</p>
-            </span>
-            <p><button class="b1"><a href="#top">↑ Voltar ao topo</a></p></button>
-
+          <h2>1. Helio Gracie e a História do Jiu Jitsu Brasileiro</h2>
+          <div class="s1">
+            <figure>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjOFShGpO_zmu8Az6tASpoe_1jR-oslp19-xzW8-ryyF2mBmm-nLek7o0zIlMfgzfzkzfyA4zzz3uvrlJ3PXcgdJHYDsIqOwBKYcVEoWYQFA&s=10"
+                alt="Hélio Gracie"
+              />
+              <figcaption>Hélio Gracie o "pai" do BJJ.</figcaption>
+            </figure>
+            <p>
+              Hélio Gracie (1913–2009), patriarca e 10º grau da faixa vermelha,
+              revolucionou a arte suave ao adaptar as técnicas tradicionais
+              japonesas para o biótipo frágil. Focando nos princípios da
+              alavanca e na força do oponente, ele moldou a arte como um sistema
+              definitivo de defesa pessoal e base do Brazilian Jiu-Jitsu (BJJ).
+            </p>
+          </div>
+          <p>
+            <button class="b1">
+              <a class="a1" href="#top">↑ Voltar ao topo</a>
+            </button>
+          </p>
         </section>
 
         <section id="topico2">
-            <h2>2. Luta do Roger Gracie a Jacaré</h2>
-            <span class="s1">
-                <figure>
-                    <img src="https://www.graciemag.com/wp-content/uploads/2024/02/Ronaldo-Jacare-x-Roger-Gracie-no-Mundial-2004.jpg"
-                        alt="Momento em que Roger Gracia quebra o braço do Jacaré" width="300">
-                    <figcaption>Momento em que Roger Gracia quebra o braço do Jacaré.</figcaption>
-                </figure>
-                <p>A histórica rivalidade entre Roger Gracie e Ronaldo "Jacaré" teve seu ápice na final do absoluto do
-                    Mundial de Jiu-Jitsu da IBJJF de 2004, quando Roger encaixou uma chave de braço que lesionou
-                    gravemente o braço de Jacaré, mas este resistiu heroicamente sem desistir e venceu a luta por
-                    pontos.</p>
-            </span>
-            <p><button class="b1"><a href="#top">↑ Voltar ao topo</a></p></button>
-
+          <h2>2. Luta do Roger Gracie x Jacaré</h2>
+          <div class="s1">
+            <figure>
+              <img
+                src="https://www.graciemag.com/wp-content/uploads/2024/02/Ronaldo-Jacare-x-Roger-Gracie-no-Mundial-2004.jpg"
+                alt="Momento em que Roger Gracie quebra o braço do Jacaré"
+              />
+              <figcaption>
+                Momento em que Roger Gracie quebra o braço do Jacaré.
+              </figcaption>
+            </figure>
+            <p>
+              A histórica rivalidade entre Roger Gracie e Ronaldo "Jacaré" teve
+              seu ápice na final do absoluto do Mundial de Jiu-Jitsu da IBJJF de
+              2004, quando Roger encaixou uma chave de braço que lesionou
+              gravemente o braço de Jacaré, mas este resistiu heroicamente sem
+              desistir e venceu a luta por pontos.
+            </p>
+          </div>
+          <p>
+            <button class="b1">
+              <a class="a1" href="#top">↑ Voltar ao topo</a>
+            </button>
+          </p>
         </section>
 
         <section id="topico3">
-            <h2>3. Meu primeiro campeonato</h2>
-            <span class="s1">
-                <figure>
-                    <img src="imagens/camp.jpeg" alt="Eu em meu primeiro campeonato" width="300">
-                    <figcaption>Eu em meu primeiro campeonato.</figcaption>
-                </figure>
-                <p>A alguns meses participei do 1<sup>o</sup> campeonato de jiu, no CIJJ (Circuito do interioir de jiu
-                    jitsu) etapa de Votuporanda, infelizmnete não ganhei, mas a experiencia foi incrível</p>
-            </span>
-            <p><button class="b1"><a href="#top">↑ Voltar ao topo</a></p></button>
-
+          <h2>3. Meu primeiro campeonato</h2>
+          <div class="s1">
+            <figure>
+              <img
+                src="imagens/camp.jpeg"
+                alt="Eu em meu primeiro campeonato"
+              />
+              <figcaption>Eu em meu primeiro campeonato.</figcaption>
+            </figure>
+            <p>
+              Há alguns meses participei do 1<sup>o</sup> campeonato de jiu, no
+              CIJJ (Circuito do Interior de Jiu Jitsu) etapa de Votuporanga,
+              infelizmente não ganhei, mas a experiência foi incrível.
+            </p>
+          </div>
+          <p>
+            <button class="b1">
+              <a class="a1" href="#top">↑ Voltar ao topo</a>
+            </button>
+          </p>
         </section>
-
-    </main>
+      </main>
+    </div>
 
     <footer>
-        <p>&copy; 2026 - Breno Vialle.</p>
+      <p>&copy; 2026 - Breno Vialle.</p>
     </footer>
-
-</body>
-
+  </body>
 </html>

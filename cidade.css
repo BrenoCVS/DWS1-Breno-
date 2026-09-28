@@ -1,3 +1,31 @@
-img{
+img {
     border-radius: 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    border: none;
+    max-width: 100%;
+}
+
+.cidade-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.secao-cidade {
+    flex: 1;
+}
+
+.secao-mapa {
+    margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+    .cidade-grid {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 }

@@ -1,61 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cidade.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cidade.css" />
 
     <title>Minha Cidade</title>
-</head>
-<body>
+  </head>
 
+  <body>
     <header id="top">
-        <div class="head"> <h1>Meu Site Pessoal</h1></div>
-        <div class="navegacao">
-            <button class="b1"><a href="index.html">Sobre mim</a></button>
-            <button class="b1"><a href="sonho.html">Um sonho</a></button>
-            <button class="b1"><a href="inspiracao.html">Alguém que me inspira</a></button>
-            <button class="b1"><a href="tematica.html">Página temática</a></button>
-            <button class="b1"><a href="sobre-o-css.html">Sobre o HTML</a></button>
-
-    
-        </div>
+      <div class="head">
+        <h1>Meu Site Pessoal</h1>
+      </div>
+      <div class="menu-container">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <nav class="navegacao">
+          <button class="b1">
+            <a class="a1" href="index.html">Sobre mim</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="cidade.html">Minha cidade</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="sonho.html">Um sonho</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="inspiracao.html">Alguém que me inspira</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="tematica.html">Página temática</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="infoproduto.html">Infoproduto</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="sobre-o-css.html">Sobre o HTML</a>
+          </button>
+        </nav>
+      </div>
     </header>
-    <br>
-    <hr>
-    <br>
+    <br />
+    <hr />
+    <br />
     <main>
-        <section>
-            <h2>História da Cidade</h2>
-            <p>Fundada em <abbr title="1882">1882</abbr>, localizada no estado de <abbr title="São Paulo">SP</abbr>.</p>
-            <figure>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwolwJdokbD6S6CCCCS-shWAj7rjS6bGOWcDkSleliiw&s=10" alt="Vista panorâmica de Tanabi" width="400">
-                <figcaption>Panorâmica da cidade.</figcaption>
-            </figure>
+      <div class="cidade-grid">
+        <section class="secao-cidade">
+          <h2>História da Cidade</h2>
+          <p>
+            Fundada em <abbr title="1882">1882</abbr>, localizada no estado de
+            <abbr title="São Paulo">SP</abbr>.
+          </p>
+          <figure>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwolwJdokbD6S6CCCCS-shWAj7rjS6bGOWcDkSleliiw&s=10"
+              alt="Vista panorâmica de Tanabi"
+              width="400"
+            />
+            <figcaption>Panorâmica da cidade.</figcaption>
+          </figure>
         </section>
 
-        <section>
-            <h2>Pontos Turísticos</h2>
-            <p>O principal ponto da cidade é a praça matriz, localizada no meio da cidade.</p>
-            <figure>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiIKMIjJBZ0oXsb7PiC1D5BOwHx-2BzLBtb2R1pMD7pQ&s=10g" alt="Praça matriz de tanabi" width="400">
-                <figcaption>Praça Matriz.</figcaption>
-            </figure>
+        <section class="secao-cidade">
+          <h2>Pontos Turísticos</h2>
+          <p>
+            O principal ponto da cidade é a praça matriz, localizada no meio da
+            cidade.
+          </p>
+          <figure>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiIKMIjJBZ0oXsb7PiC1D5BOwHx-2BzLBtb2R1pMD7pQ&s=10g"
+              alt="Praça matriz de tanabi"
+              width="400"
+            />
+            <figcaption>Praça Matriz.</figcaption>
+          </figure>
         </section>
+      </div>
 
-        <section>
-            <h2>Localização</h2>
-            <p>Veja no mapa abaixo onde estamos localizados:</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29872.543051487934!2d-49.6593608!3d-20.62608975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bd0cfd92e6597d%3A0x4852168b69833459!2sTanabi%2C%20SP%2C%2015170-000!5e0!3m2!1spt-BR!2sbr!4v1786963844629!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>        
-        </section>
+      <section class="secao-mapa">
+        <h2>Localização</h2>
+        <p>Veja no mapa abaixo onde estamos localizados:</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29872.543051487934!2d-49.6593608!3d-20.62608975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bd0cfd92e6597d%3A0x4852168b69833459!2sTanabi%2C%20SP%2C%2015170-000!5e0!3m2!1spt-BR!2sbr!4v1786963844629!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="450"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </section>
 
-        <p><button class="b1"><a href="#top">↑ Voltar ao topo</a></p></button>    
+      <p>
+        <button class="b1">
+          <a class="a1" href="#top">↑ Voltar ao topo</a>
+        </button>
+      </p>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Breno Vialle.</p>
+      <p>&copy; 2026 - Breno Vialle.</p>
     </footer>
-
-</body>
+  </body>
 </html>
