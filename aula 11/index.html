@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>Aprendendo o Bootstrap</title>
+</head>
+<header>
+<br><br>
+    <nav>
+        <div class="d-flex justify-content-evenly">
+            
+            <a href="">
+                <button type="button" class="btn btn-light">Formulário</button>
+
+            </a>
+            <a href="">
+                <button type="button" class="btn btn-light">Sobre nós</button>
+
+            </a>
+            <a href="">
+                <button type="button" class="btn btn-light">Light</button>
+
+            </a>
+        </div>
+    </nav>
+    <br><br>
+</header>
+
+<body class="bg-dark text-light ">
+    <h1 class="text-center">Formulario para cadastro no grupo do planetário</h1>
+    <div class="container my-5">
+        <h2 class="mb-4">Inscrição no Clube de Astronomia</h2>
+
+        <form class="row g-3">
+
+            <div class="col-md-6">
+                <label for="inputNome" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Digite seu nome">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="seu_email@exemplo.com">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputTelefone" class="form-label">Telefone / WhatsApp</label>
+                <input type="tel" class="form-control" id="inputTelefone" placeholder="(11) 99999-9999">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputUrl" class="form-label">Link de Perfil ou Rede Social</label>
+                <input type="url" class="form-control" id="inputUrl" placeholder="https://instagram.com/seu_perfil">
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputExperiencia" class="form-label">Anos de Experiência</label>
+                <input type="number" class="form-control" id="inputExperiencia" min="0" max="50" placeholder="Ex: 2">
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputData" class="form-label">Data de Nascimento</label>
+                <input type="date" class="form-control" id="inputData">
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputArquivo" class="form-label">Foto de Astrofotografia (Opcional)</label>
+                <input type="file" class="form-control" id="inputArquivo">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputNivel" class="form-label">Nível de Conhecimento</label>
+                <select id="inputNivel" class="form-select">
+                    <option selected disabled>Escolha...</option>
+                    <option value="iniciante">Iniciante (Curioso pelo céu)</option>
+                    <option value="intermediario">Intermediário (Possuo instrumentos)</option>
+                    <option value="avancado">Avançado (Astrofotógrafo)</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <label for="inputMotivacao" class="form-label">O que te motivou a participar?</label>
+                <textarea class="form-control" id="inputMotivacao" rows="3"
+                    placeholder="Conte-nos um pouco sobre seu interesse no universo..."></textarea>
+            </div>
+
+            <div class="col-12">
+                <label class="form-label d-block">Aceita receber notificações por e-mail?</label>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gridRadioTermos" id="gridRadioSim" value="sim">
+                    <label class="form-check-label" for="gridRadioSim">Sim</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gridRadioTermos" id="gridRadioNao" value="nao"
+                        checked>
+                    <label class="form-check-label" for="gridRadioNao">Não</label>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label class="form-label d-block">Áreas de Interesse (Marque quantas quiser):</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="interesseLua" value="lua">
+                    <label class="form-check-label" for="interesseLua">Lua e Planetas</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="interesseNebulosa" value="nebulosa">
+                    <label class="form-check-label" for="interesseNebulosa">Céu Profundo</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="interesseTeoria" value="teoria">
+                    <label class="form-check-label" for="interesseTeoria">Cosmologia</label>
+                </div>
+            </div>
+
+            <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-primary">Enviar Inscrição</button>
+                <button type="reset" class="btn btn-outline-light ms-2">Limpar Formulário</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
