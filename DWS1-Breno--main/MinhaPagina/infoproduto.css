@@ -1,0 +1,162 @@
+.hero {
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: white;
+}
+
+.tagline {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: bisque;
+    color: darkred;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detalhes {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f5e1d3;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid darkred;
+}
+
+.cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.versao-mobile-resumo {
+    display: block;
+    background-color: #fff8dc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.versao-desktop-detalhada {
+    display: none;
+}
+
+.depoimentos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.depoimento {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+.depoimento span {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.preco-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.card-preco {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.valor-antigo {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.valor {
+    font-size: 1.4em;
+    color: darkred;
+}
+
+.btn-comprar {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.faq details {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .conteudo-principal {
+        flex-direction: row;
+    }
+
+    .cards-grid {
+        flex-direction: row;
+    }
+
+    .cards-grid .card {
+        flex: 1;
+    }
+
+    .versao-mobile-resumo {
+        display: none;
+    }
+
+    .versao-desktop-detalhada {
+        display: block;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .depoimentos-container {
+        flex-direction: row;
+    }
+
+    .depoimento {
+        flex: 1;
+    }
+}

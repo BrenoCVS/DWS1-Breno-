@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sobre-o-css.css" />
+    <title>Sobre o HTML e CSS</title>
+  </head>
+
+  <body>
+    <header id="top">
+      <div class="head">
+        <h1>Meu Site Pessoal</h1>
+      </div>
+      <div class="menu-container">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <nav class="navegacao">
+          <button class="b1">
+            <a class="a1" href="index.html">Sobre mim</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="cidade.html">Minha cidade</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="sonho.html">Um sonho</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="inspiracao.html">Alguém que me inspira</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="tematica.html">Página temática</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="infoproduto.html">Infoproduto</a>
+          </button>
+          <button class="b1">
+            <a class="a1" href="sobre-o-css.html">Sobre o HTML/CSS</a>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <br />
+    <hr />
+    <br />
+    <main>
+      <section>
+        <h2>Novas Tags HTML Explicadas</h2>
+        <ul class="lista-conceitos">
+          <li>
+            <strong>&lt;aside&gt;</strong>
+            <br /><em>Funcionalidade:</em> Define um bloco de conteúdo que está
+            tangencialmente relacionado com o conteúdo principal à sua volta
+            (como barras laterais ou menus de índice). <br /><em
+              >Por que foi usado:</em
+            >
+            Foi utilizado na página temática para encapsular o índice "Navegue
+            pelos blocos", separando-o semanticamente dos tópicos principais.
+          </li>
+          <li>
+            <strong>&lt;input&gt;</strong>
+            <br /><em>Funcionalidade:</em> Cria um controlo interativo para
+            formulários ou para guardar estados (neste caso, o estado de uma
+            caixa de verificação / checkbox). <br /><em>Por que foi usado:</em>
+            Utilizado (com <code>type="checkbox"</code>) para controlar a
+            abertura e o fecho do menu hambúrguer em dispositivos móveis, sem
+            necessitar de JavaScript.
+          </li>
+          <li>
+            <strong>&lt;label&gt;</strong>
+            <br /><em>Funcionalidade:</em> Representa uma legenda ou rótulo
+            associado a um elemento de interface de utilizador (como um input).
+            <br /><em>Por que foi usado:</em> Utilizado para criar o ícone do
+            menu hambúrguer (&#9776;). Ao ser associado ao
+            <code>&lt;input&gt;</code> através da propriedade <code>for</code>,
+            clicar no label ativa/desativa o checkbox oculto.
+          </li>
+          <li>
+            <strong>&lt;details&gt;</strong>
+            <br /><em>Funcionalidade:</em> Cria um widget de expansão a partir
+            do qual o utilizador pode exibir ou ocultar informações adicionais.
+            <br /><em>Por que foi usado:</em> Permite criar secções de conteúdo
+            expansível para organizar blocos grandes de texto sem sobrecarregar
+            a página visualmente.
+          </li>
+          <li>
+            <strong>&lt;summary&gt;</strong>
+            <br /><em>Funcionalidade:</em> Define um cabeçalho visível para o
+            elemento <code>&lt;details&gt;</code>. <br /><em
+              >Por que foi usado:</em
+            >
+            Serve como o título clicável que o utilizador pressiona para abrir
+            ou fechar o conteúdo oculto dentro da tag details.
+          </li>
+          <li>
+            <strong>&lt;blockquote&gt;</strong>
+            <br /><em>Funcionalidade:</em> Indica que o texto incluído é uma
+            citação longa retirada de outra fonte. <br /><em
+              >Por que foi usado:</em
+            >
+            Aplicado para destacar blocos de texto inspiracionais ou frases
+            importantes em seções do projeto.
+          </li>
+          <li>
+            <strong>&lt;cite&gt;</strong>
+            <br /><em>Funcionalidade:</em> Representa a referemcia ou o título
+            de uma obra <br /><em>Por que foi usado:</em> Usado dentro ou
+            próximo dos blockquotes para dar credito ao autor ou a origem da
+            citação.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Novas Propriedades CSS Explicadas</h2>
+        <ul class="lista-conceitos">
+          <li>
+            <strong>flex-wrap</strong>
+            <br /><em>Funcionalidade:</em> Define se os elementos num contentor
+            Flexbox devem tentar encaixar-se numa única linha ou quebrar para
+            múltiplas linhas se não houver espaço. <br /><em
+              >Por que foi usado:</em
+            >
+            Utilizado para permitir que as imagens da galeria (na página do
+            sonho) se reorganizem automaticamente para baixo quando exibir em
+            uma tela menor.
+          </li>
+          <li>
+            <strong>gap</strong>
+            <br /><em>Funcionalidade:</em> Controla o espaçamento vazio entre
+            linhas e colunas dentro de um layout Flexbox ou CSS Grid. <br /><em
+              >Por que foi usado:</em
+            >
+            Substitui o uso complexo de margens, garantindo um espaçamento
+            uniforme entre os botões do menu, ou entre o menu lateral e o
+            conteúdo na página temática.
+          </li>
+          <li>
+            <strong>text-decoration</strong>
+            <br /><em>Funcionalidade:</em> Especifica decorações visuais
+            adicionadas ao texto, como sublinhados. <br /><em
+              >Por que foi usado:</em
+            >
+            foi configurado como <code>none</code> para remover o sublinhado dos
+            links (tags <code>&lt;a&gt;</code>), tornando o design mais limpo.
+          </li>
+          <li>
+            <strong>font-weight</strong>
+            <br /><em>Funcionalidade:</em> Define a espessura dos caracteres do
+            tipo de letra. <br /><em>Por que foi usado:</em> Utilizado para
+            destacar partes de texto importantes, aplicando negrito (ex:
+            <code>bold</code>) nos títulos e chamadas para ação.
+          </li>
+          <li>
+            <strong>box-shadow</strong>
+            <br /><em>Funcionalidade:</em> Adiciona efeitos de sombra em redor
+            da caixa de um elemento. <br /><em>Por que foi usado:</em> Utilizado
+            para dar uma sensação de profundidade e destaque em componentes como
+            o menu lateral ou botões flutuantes.
+          </li>
+          <li>
+            <strong>box-sizing</strong>
+            <br /><em>Funcionalidade:</em> Define como o navegador calcula a
+            largura e a altura totais de um elemento. <br /><em
+              >Por que foi usado:</em
+            >
+            Configurado como <code>border-box</code> para assegurar que a margem
+            interna (padding) não aumente a largura total do elemento,
+            facilitando a construção de layouts responsivos.
+          </li>
+          <li>
+            <strong>flex-shrink</strong>
+            <br /><em>Funcionalidade:</em> Define o fator de contração de um
+            elemento dentro do Flexbox, ou seja, o quanto ele deve encolher face
+            aos restantes. <br /><em>Por que foi usado:</em> Utilizado (como
+            <code>0</code>) no <code>&lt;aside&gt;</code> da página temática
+            para garantir que o menu lateral não seja esmagado pelo conteúdo
+            principal quando a tela for pequena.
+          </li>
+          <li>
+            <strong>list-style-type</strong>
+            <br /><em>Funcionalidade:</em> Define o estilo do marcador utilizado
+            numa lista não ordenada. <br /><em>Por que foi usado:</em> Usado com
+            o valor <code>none</code> para retirar as "bolinhas" padrão das
+            listas do menu principal e da lista de definições, permitindo uma
+            formatação de layout customizada.
+          </li>
+          <li>
+            <strong>line-height</strong>
+            <br /><em>Funcionalidade:</em> Define a distância vertical (altura)
+            entre as linhas do texto. <br /><em>Por que foi usado:</em>
+            Utilizado (ex: <code>1.5</code>) para afastar as linhas do texto
+            longo, facilitando a leitura e melhorando a estética dos parágrafos.
+          </li>
+          <li>
+            <strong>cursor</strong>
+            <br /><em>Funcionalidade:</em> Altera o aspeto do cursor do mouse
+            quando este passa sobre o elemento. <br /><em
+              >Por que foi usado:</em
+            >
+            Definido como <code>pointer</code> (mão de clique) em botões, links
+            e no ícone do menu hambúrguer para dar um feedback visual de que o
+            elemento é interativo.
+          </li>
+          <li>
+            <strong>user-select</strong>
+            <br /><em>Funcionalidade:</em> Controla se e como o texto de um
+            elemento pode ser selecionado pelo utilizador. <br /><em
+              >Por que foi usado:</em
+            >
+            Configurado como <code>none</code> no ícone de texto do menu
+            hambúrguer (&#9776;) para evitar que este fique selecionado
+            acidentalmente e manchado de azul durante o clique (especialmente em
+            telemóveis).
+          </li>
+        </ul>
+      </section>
+
+      <p>
+        <button class="b1">
+          <a class="a1" href="#top">↑ Voltar ao topo</a>
+        </button>
+      </p>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 - Breno Vialle.</p>
+    </footer>
+  </body>
+</html>
